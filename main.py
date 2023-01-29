@@ -2,6 +2,8 @@ from fastapi import FastAPI, Query, HTTPException
 from pydantic import BaseModel
 from model import predict, convert
 
+
+
 app = FastAPI()
 
 # pydantic models
