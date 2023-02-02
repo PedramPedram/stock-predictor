@@ -66,3 +66,9 @@ webencodings==0.5.1
 wheel==0.37.1
 xarray==2022.11.0
 yfinance==0.2.9
+
+curl \
+--header "Content-Type: application/json" \
+--request POST \
+--data '{"ticker":"MSFT", "days":7}' \
+35.86.166.206:8000/predict
