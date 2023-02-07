@@ -1,0 +1,46 @@
+1- What does it mean to create a Docker image and why do we use Docker images?
+
+A Docker image is a lightweight, stand-alone, executable package that includes everything needed to run a piece of software, including the code, a runtime, libraries, environment variables, and config files.
+
+Docker images are used to create containers, which are standalone execution environments that allow developers to package an application with all the parts it needs, such as libraries and other dependencies, and ship it all out as one package. Containers provide a consistent and reproducible runtime environment, making it easier to develop, test, and deploy applications. Docker images are also portable and can run on any system that has Docker installed, making it easier to share applications between teams, test and QA environments, and production servers.
+
+
+2- Please explain what is the difference between a Container vs a Virtual Machine?
+
+A container and a virtual machine (VM) are both methods for isolating and running software components, but they differ in several key ways:
+
+Resource isolation: A container runs as an isolated process on the host operating system and shares the host kernel with other containers. A VM, on the other hand, runs its own operating system and has its own kernel, which means it has its own dedicated resources and requires more overhead.
+
+Size: Containers are much smaller and lightweight than VMs, making them faster to start, stop, and move around.
+
+Portability: Containers are designed to be portable and can run on any system that has Docker installed, whereas VMs need to be specifically configured for each new system they are run on.
+
+Scalability: Containers can be easily scaled up and down, either by adding or removing containers, or by increasing or decreasing the resources assigned to each container. VMs can be scaled, but the process is more manual and resource-intensive.
+
+Flexibility: Containers allow developers to package an application with all its dependencies and configurations, making it easier to build and deploy applications consistently across different environments. VMs can also run multiple applications, but this requires more overhead and manual configuration.
+
+
+3- What are 5 examples of container orchestration tools (please list tools)?
+
+-Kubernetes: An open-source platform that automates the deployment, scaling, and management of containerized applications.
+
+-Docker Swarm: A native orchestration solution offered by Docker that makes it easy to deploy and manage containers at scale.
+
+-Apache Mesos: An open-source cluster manager that provides efficient resource isolation and sharing across distributed applications or frameworks.
+
+-Amazon Elastic Container Service (ECS): A fully managed container orchestration service that makes it easy to run, stop, and manage Docker containers on the AWS cloud.
+
+-Nomad: An open-source, cloud-agnostic orchestrator that makes it easy to deploy and manage containers and non-containerized applications in dynamic, resource-constrained environments.
+
+-Rancher: An open-source platform for managing containers that makes it easy to deploy, manage, and scale applications in a consistent manner across any infrastructure.
+
+-OpenShift: An open-source container application platform that provides a platform for developing, deploying, and managing containers on-premises or in the cloud. OpenShift provides a full development lifecycle experience, including integrated CI/CD, and is built on top of Kubernetes.
+
+
+4- How does a Docker image differ from a Docker container?
+
+A Docker image and a Docker container are related concepts in Docker, but they are not the same thing.
+
+A Docker image is a lightweight, stand-alone, executable package that includes everything needed to run a piece of software, including the code, a runtime, libraries, environment variables, and config files. It is a snapshot of a container and can be used to create new containers.
+
+A Docker container, on the other hand, is a running instance of a Docker image. It is an isolated and lightweight environment that includes all the components defined in the image, such as code, runtime, libraries, environment variables, and config files, as well as a file system that is built from the image. When a container is created from an image, it runs as a standalone process in a shared operating system, but is isolated from other containers and the host system.
