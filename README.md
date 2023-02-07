@@ -14,7 +14,7 @@ You can also access the API documentation by using the public IPv4 address in th
 <p align="center">
 <img src="img/img1.png" alt="drawing" width="300"/>
 
-<img src="img/omg2.png" alt="drawing" width="300"/>
+<img src="img/img2.png" alt="drawing" width="300"/>
 </p>
 
 <p align="center">
